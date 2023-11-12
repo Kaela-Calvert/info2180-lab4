@@ -9,11 +9,30 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <h1>Avengers Character Search</h1>
-    <div id="search">
-    <button type="button" onclick="loadXMLDoc()">Search</button>
+    <div class="container">
+        <h1>Avengers Character Search</h1>
+        <div id="search">
+            <form action ="#" method=""post>
+                <div class="form-group">
+                    <label for="searching">Search by Full Name or Alias:</label><br>
+                    <input type="text" name="name" id="name" placeholder="eg. Captin America or Steve Rogers">
+                </div>
+                <button type="button" class="btn" onclick="loadXMLDoc()">Search</button>
+            </form>
+        </div>
     </div>
-    
- 
+
+
+    <!-- <div id="result">
+        <h2>RESULT</h2> 
+    </div>
+     -->
+
+    <div class="quote">
+        <h2>RESULT</h2>
+        <hr>
+        <div id="result"></div>
+    </div>
 </body>
 </html>
+
